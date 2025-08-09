@@ -8,7 +8,7 @@ from site_scons.site_tools.NVDATool.typings import AddonInfo, BrailleTables, Sym
 # Gettext recognizes only strings given as parameters to the `_` function.
 # To avoid initializing translations in this module we simply import a "fake" `_` function
 # which returns whatever is given to it as an argument.
-from site_scons.site_tools.NVDATool.utils import _
+from gettext import gettext as _
 
 
 # Add-on information variables
