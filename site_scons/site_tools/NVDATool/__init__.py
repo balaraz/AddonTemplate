@@ -16,13 +16,11 @@ The following environment variables are required to create the manifest:
 
 The following environment variables are required to build the HTML:
 
-- moFile: str|Path|None
+- moFile: str | pathlib.Path | None
 - mdExtensions: list[str]
 - addon_info: .typings.AddonInfo
 
 """
-
-from pathlib import Path
 
 from SCons.Script import Environment, Builder
 
